@@ -12,6 +12,7 @@ body {
 
   overscroll-behavior: none;
   position: relative;
+  overflow: hidden;
 
   .logo {
     position: absolute;
@@ -94,9 +95,17 @@ body {
       }
 
       &.contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../assets/bg.jpg");
+        background-size: cover;
+
         .pusaka {
           display: none;
-          height: calc(100% - 80px);
+          height: calc(100% - 110px);
+          margin-top: 20px;
+          width: 50vw;
         }
         
         .footer {
@@ -109,6 +118,48 @@ body {
           .footer-content {
             margin: 20px 0 0 6vh;
             font-family: var(--font-primary);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+
+    main {
+      section {
+        &.landing {
+          .landing-content {
+            .landing-hero {
+
+              h1 {
+                font-size: 3.4em;
+                line-height: .9em;
+              }
+
+              button {
+                font-size: 1em;
+                padding: 6px 20px;
+              }
+            }
+          }
+        }
+
+        &.contact {
+          .pusaka {
+            width: 100%;
+            height: calc(100% - 60px);
+            margin: unset;
+          }
+
+          .footer {
+            height: 60px;
+
+            .footer-content {
+              font-size: .8em;
+            }
           }
         }
       }
