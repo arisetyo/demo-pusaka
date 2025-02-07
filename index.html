@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BreakfastAlley - Your partner baker</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <script type="module" crossorigin src="https://app-container.pusaka.ai/pusaka-container.mjs"></script>
+  </head>
+  <body>
+
+    <div class="logo">
+      <span>Breakfast</span><span>Alley</span>
+    </div>
+    
+    <main>
+      <section class="landing">
+        <video autoplay muted loop>
+          <source src="/assets/landing.mp4" type="video/mp4" />
+        </video>
+
+        <div class="landing-content">
+          <div class="landing-hero">
+            <h1>Great food is<br/>up our alley!</h1>
+            <button
+              onclick="scrollDown()"
+            >
+              Talk to our agent, Sophie
+            </button>
+          </div>
+        </div>
+      </section>
+  
+      <section class="contact">
+        <div class="pusaka">
+          <pusaka-container
+            data-agent-id="58b8996f"
+            data-theme="light"
+            data-app-mode="chat">
+          </pusaka-container>
+        </div>
+        <div class="footer">
+          <div class="footer-content">
+            goodlife@<strong>breakfastalley.com</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
